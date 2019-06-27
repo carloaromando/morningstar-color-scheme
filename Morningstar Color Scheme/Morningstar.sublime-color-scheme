@@ -1,0 +1,120 @@
+{
+    "name": "Morningstar",
+    "author": "Carlo Aromando",
+    "variables":
+    {
+        "active":    "#007ACC",
+        "selection": "#cfcfcf",
+        "blue":      "#007CA6",
+        "green":     "#448C27",
+        "red":       "#AA3731",
+        "magenta":   "#7A3E9D",
+        "grey":      "#888888",
+        "orange":    "#FFBC5D",
+        "black":     "#000000",
+        "white":     "#FFFFFF",
+        "yellow":    "#FFFABCB0",
+    },
+    "globals":
+    {
+        "foreground":                  "#000000",
+        "background":                  "#ECEBEB",
+        "caret":                       "var(black)",
+        "line_highlight":              "color(var(yellow) alpha(0.7))",
+        "gutter":                      "#D8D8D8",
+        "misspelling":                 "var(red)",
+        "selection":                   "var(selection)",
+        "selection_border_width":      "0",
+        "inactive_selection":          "#E0E0E0",
+        "selection_corner_radius":     "2",
+        "highlight":                   "var(black)",
+        "find_highlight_foreground":   "var(white)",
+        "find_highlight":              "var(black)",
+        "brackets_options":            "underline",
+        "bracket_contents_options":    "underline",
+        "tags_options":                "foreground",
+        "tags_foreground":             "var(active)"
+    },
+    "rules":
+    [
+        {"name":       "Comment",
+         "scope":      "comment, punctuation.definition.comment",
+         //"background":    "color(var(yellow) alpha(0.45))",
+         "foreground": "var(grey)"},
+
+        {"name":       "String",
+         "scope":      "string",
+         "foreground": "var(blue)",
+         "font_style": ""},
+
+         {"name":       "StringPunctuation",
+         "scope":      "punctuation.definition.string.begin, punctuation.definition.string.end",
+         "foreground": "var(blue)"},
+
+        {"name":       "Escapes",
+         "scope":      "constant.character.escape, constant.other.placeholder",
+         "foreground": "var(grey)"},
+
+        {"name":       "Punctuation",
+         "scope":      "punctuation",
+         "foreground": "var(black)"},
+
+        {"name":       "Constants",
+         "scope":      "constant",
+         "foreground": "var(black)"},
+
+        {"name":       "Definitions",
+         "scope":      "entity.name.function.definition, entity.name.constant, keyword.control.ruby, keyword.control.def.ruby, keyword.control.start-block.ruby, support.function.builtin.ruby",
+         "foreground": "var(black)",
+         "font_style": "bold"},
+
+        {"name":       "RubyBold",
+         "scope":      "keyword.control.ruby, keyword.control.def.ruby, keyword.control.start-block.ruby, support.function.builtin.ruby, meta.require.ruby, meta.module.ruby, meta.class.ruby, support.class.ruby, keyword.other.special-method.ruby",
+         "foreground": "var(black)",
+         "font_style": "bold"},
+
+        {"name":       "CBold",
+         "scope":      "storage.type.c, keyword.control.flow.return.c, keyword.control.c",
+         "foreground": "var(black)",
+         "font_style": "bold"}, 
+
+        {"name":       "GoBold",
+         "scope":      "storage.type.keyword, storage.type, keyword.other.import.go, keyword.other.package.go",
+         "foreground": "var(black)",
+         "font_style": "bold"}, 
+
+        {"name":       "PhpBold",
+         "scope":      "meta.classes.php, support.class.php",
+         "foreground": "var(black)",
+         "font_style": "bold"},
+
+        {"name":       "ErlangBold",
+         "scope":      "entity.name.function.erlang",
+         "foreground": "var(black)",
+         "font_style": "bold"},
+
+        {"name":       "Symbols",
+         "scope":      "constant.other.symbol.unquoted.erlang, constant.other.symbol.ruby, punctuation.definition.constant.ruby",
+         "foreground": "var(blue)"},
+
+        {"name":       "Mistakes",
+         "scope":      "invalid",
+         "foreground": "var(red)",
+         "background": "color(var(red) alpha(0.2))"},
+
+        {"scope": "markup.inserted",
+         "foreground": "hsl(100, 50%, 50%)"},
+
+        {"scope": "markup.deleted",
+         "foreground": "hsl(2, 65%, 50%)"},
+         
+        {"scope": "markup.changed",
+         "foreground": "hsl(30, 85%, 50%)"},
+
+        {"scope": "markup.ignored",
+         "foreground": "#aaa"},
+
+        {"scope": "markup.untracked",
+         "foreground": "#aaa"}
+    ]
+}
