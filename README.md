@@ -7,3 +7,4 @@ Simple personal light Sublime Text 3 color scheme inspired by:
 - https://github.com/andreypopp/vim-colors-plain
 
 ### Preview
+![image](https://raw.githubusercontent.com/carloaromando/morningstar-color-scheme/master/preview.png)
